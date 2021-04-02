@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ed2bd45bfdc1236c2d8e936f6003b593",
+    "content-hash": "67a18eba11f18b19aa18e553c8fe33a0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -895,16 +895,16 @@
         },
         {
             "name": "inertiajs/inertia-laravel",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inertiajs/inertia-laravel.git",
-                "reference": "097fe5b3be73ab8edea1a5216a696f627c1f6b03"
+                "reference": "96c60a7f01ac1032e3dd974b465b8ded41b299dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/097fe5b3be73ab8edea1a5216a696f627c1f6b03",
-                "reference": "097fe5b3be73ab8edea1a5216a696f627c1f6b03",
+                "url": "https://api.github.com/repos/inertiajs/inertia-laravel/zipball/96c60a7f01ac1032e3dd974b465b8ded41b299dc",
+                "reference": "96c60a7f01ac1032e3dd974b465b8ded41b299dc",
                 "shasum": ""
             },
             "require": {
@@ -951,7 +951,7 @@
             ],
             "support": {
                 "issues": "https://github.com/inertiajs/inertia-laravel/issues",
-                "source": "https://github.com/inertiajs/inertia-laravel/tree/v0.4.0"
+                "source": "https://github.com/inertiajs/inertia-laravel/tree/v0.4.1"
             },
             "funding": [
                 {
@@ -959,7 +959,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-03-02T19:35:26+00:00"
+            "time": "2021-04-02T17:50:29+00:00"
         },
         {
             "name": "laravel/framework",
@@ -4778,6 +4778,67 @@
                 }
             ],
             "time": "2021-03-28T09:42:18+00:00"
+        },
+        {
+            "name": "tightenco/ziggy",
+            "version": "0.9.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tighten/ziggy.git",
+                "reference": "82ea6ec6cb6ab3545b0245310b2a424316fe48d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tighten/ziggy/zipball/82ea6ec6cb6ab3545b0245310b2a424316fe48d8",
+                "reference": "82ea6ec6cb6ab3545b0245310b2a424316fe48d8",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.4@dev"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tightenco\\Ziggy\\ZiggyServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tightenco\\Ziggy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Coulbourne",
+                    "email": "daniel@tighten.co"
+                },
+                {
+                    "name": "Jake Bathman",
+                    "email": "jake@tighten.co"
+                }
+            ],
+            "description": "Generates a Blade directive exporting all of your named Laravel routes. Also provides a nice route() helper function in JavaScript.",
+            "homepage": "https://github.com/tightenco/ziggy",
+            "keywords": [
+                "Ziggy",
+                "javascript",
+                "laravel",
+                "routes"
+            ],
+            "support": {
+                "issues": "https://github.com/tighten/ziggy/issues",
+                "source": "https://github.com/tighten/ziggy/tree/0.9.4"
+            },
+            "time": "2020-06-05T14:42:41+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

@@ -10,13 +10,16 @@ const BookmarkAddPage: React.FC<Props> = () => {
         link: '',
         title: "some title"
     })
+
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setState({ ...state, [event.currentTarget.name]: event.currentTarget.value })
     }
+
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         Inertia.post('/bookmark/preview', state)
     }
+
     return (
         <Layout>
             <div className="row">
