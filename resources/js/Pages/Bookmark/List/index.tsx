@@ -14,6 +14,7 @@ const BookmarkListPage: React.FC<Props> = ({ bookmarks }) => {
                         {bookmarks.length > 0 && bookmarks.map((bookmark, index) => {
                             return <li className="list-group-item" key={index}>
                                 <p>Title: {bookmark.title}</p>
+                                <p>Link: <a href={bookmark.url}>{bookmark.url}</a></p>
                             </li>
                         })}
                     </ul>

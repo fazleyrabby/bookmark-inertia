@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BookmarkController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,5 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::group(['middleware', ['auth']], function(){
     Route::get('/bookmarks', [BookmarkController::class, 'index'])->name('bookmark.index');
+    Route::get('/bookmarks/add', [BookmarkController::class, 'add'])->name('bookmark.add');
+    Route::post('/bookmark/preview', [BookmarkController::class, 'getPreviewData'])->name('bookmark.preview');
 });
 
